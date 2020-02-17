@@ -1,3 +1,17 @@
-# Repository for class project
+# Ryan De Lap Homework
 
-This readme is a placeholder that should be replaced
+## Homework 1
+
+
+### Scope
+The goal of this application is to setup an enviroment and test the [Rollup.js](https://rollupjs.org/guide/en/) library.
+
+### Running
+
+To run this webapp, clone down this repository and run the following commands:
+```
+npm install
+npm run build
+npm start
+```
+

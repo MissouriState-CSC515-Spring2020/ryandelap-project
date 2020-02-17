@@ -1,0 +1,33 @@
+{
+  "name": "ryandelap-project",
+  "version": "1.0.0",
+  "description": "This readme is a placeholder that should be replaced",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MissouriState-CSC515-Spring2020/ryandelap-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MissouriState-CSC515-Spring2020/ryandelap-project/issues"
+  },
+  "homepage": "https://github.com/MissouriState-CSC515-Spring2020/ryandelap-project#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.16.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.1.0",
+    "rollup-plugin-terser": "^5.0.0",
+    "serve": "^11.0.2"
+  },
+  "dependencies": {
+    "date-fns": "^1.30.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "dev": "npm-run-all --parallel start watch",
+    "start": "serve public"
+  }
+}

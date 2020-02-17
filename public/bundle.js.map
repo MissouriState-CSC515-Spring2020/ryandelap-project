@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","sources":["../src/main.js"],"sourcesContent":["console.log(\"Hello world!\")\n\ndocument.getElementById('content').innerHTML = '<p>Hello World!</p>';\n\nconsole.log(\"Hello world 2!\")\n"],"names":["console","log","document","getElementById","innerHTML"],"mappings":"yBAAAA,QAAQC,IAAI,gBAEZC,SAASC,eAAe,WAAWC,UAAY,sBAE/CJ,QAAQC,IAAI"}
