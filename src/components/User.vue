@@ -5,16 +5,16 @@
 		<p>Recent Posts:</p>
     <b-row class="text-center">
       <b-col>
-				<router-link to="/single"><img src="https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg" /></router-link>
+				<router-link to="/single"><img src="cutedoge.jpg" /></router-link>
       </b-col>
       <b-col>
-				<router-link to="/single"><img src="https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg" /></router-link>
+				<router-link to="/single"><img src="cutedoge.jpg" /></router-link>
       </b-col>
       <b-col>
-				<router-link to="/single"><img src="https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg" /></router-link>
+				<router-link to="/single"><img src="cutedoge.jpg" /></router-link>
       </b-col>
       <b-col>
-				<router-link to="/single"><img src="https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg" /></router-link>
+				<router-link to="/single"><img src="cutedoge.jpg" /></router-link>
       </b-col>
     </b-row>
   </div>
