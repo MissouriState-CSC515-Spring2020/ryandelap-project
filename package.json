@@ -1,33 +1,52 @@
 {
   "name": "ryandelap-project",
-  "version": "1.0.0",
-  "description": "This readme is a placeholder that should be replaced",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MissouriState-CSC515-Spring2020/ryandelap-project.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MissouriState-CSC515-Spring2020/ryandelap-project/issues"
-  },
-  "homepage": "https://github.com/MissouriState-CSC515-Spring2020/ryandelap-project#readme",
-  "devDependencies": {
-    "npm-run-all": "^4.1.5",
-    "rollup": "^1.16.2",
-    "rollup-plugin-commonjs": "^10.0.0",
-    "rollup-plugin-node-resolve": "^5.1.0",
-    "rollup-plugin-terser": "^5.0.0",
-    "serve": "^11.0.2"
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+		"start": "npm run serve"
   },
   "dependencies": {
-    "date-fns": "^1.30.1"
+    "bootstrap-vue": "^2.1.0",
+    "core-js": "^3.4.4",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.5"
   },
-  "scripts": {
-    "build": "rollup -c",
-    "watch": "rollup -c -w",
-    "dev": "npm-run-all --parallel start watch",
-    "start": "serve public"
-  }
+  "devDependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "babel-eslint": "^10.0.3",
+    "bootstrap": "^4.3.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "mutationobserver-shim": "^0.3.3",
+    "popper.js": "^1.16.0",
+    "portal-vue": "^2.1.6",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-bootstrap-vue": "^0.6.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }

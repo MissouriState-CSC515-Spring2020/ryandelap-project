@@ -1,3 +1,13 @@
-console.log("Hello world!")
+import '@babel/polyfill'
+import 'mutationobserver-shim'
+import Vue from 'vue'
+import './plugins/bootstrap-vue'
+import App from './App.vue'
+import router from '@/router'
 
-document.getElementById('content').innerHTML = '<p>Hello World!</p>';
+Vue.config.productionTip = false
+
+new Vue({
+  render: h => h(App),
+	router
+}).$mount('#app')

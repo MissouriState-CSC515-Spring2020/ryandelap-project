@@ -1,17 +1,24 @@
-# Ryan De Lap Homework
+# ryandelap-project
 
-## Homework 1
-
-
-### Scope
-The goal of this application is to setup an enviroment and test the [Rollup.js](https://rollupjs.org/guide/en/) library.
-
-### Running
-
-To run this webapp, clone down this repository and run the following commands:
+## Project setup
 ```
 npm install
-npm run build
-npm start
 ```
 
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
