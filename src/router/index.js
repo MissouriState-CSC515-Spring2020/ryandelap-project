@@ -2,49 +2,40 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Home from '@/components/Home'
-import Single from '@/components/Single'
+import Video from '@/components/Video'
 import Category from '@/components/Category'
-import User from '@/components/User'
+import VueYouTubeEmbed from 'vue-youtube-embed'
 
 Vue.use(Router)
+Vue.use(VueYouTubeEmbed)
+
 export default new Router({
-  mode: 'history',
-  routes: [
-    {
-      path: '/',
-			alias: '/home',
-      component: Home,
-			meta: {
-				title: 'Home'
-			}
-    },
-		{
-      path: '/single',
-      name: 'Single',
-      component: Single,
-			meta: {
-				title: 'View Image'
-			}
-    },
-		{
-      path: '/category',
-      name: 'Category',
-      component: Category,
-			meta: {
-				title: 'Dog Images'
-			}
-    },
-		{
-      path: '/user',
-      name: 'User',
-      component: User,
-			meta: {
-				title: 'User X_MDS_SLAYER_X'
-			}
+    mode: 'history',
+    routes: [{
+            path: '/',
+            alias: '/home',
+            component: Home,
+            meta: {
+                title: 'Home'
+            }
+        },
+        {
+            path: '/video/:id',
+            name: 'video',
+            component: Video,
+            meta: {
+                title: 'View Video'
+            } 
+        },
+        {
+            path: '/category/:category',
+            name: 'Category',
+            component: Category,
+            props: true,
+        },
+    ],
+    path: '*', // or '/index.html'
+    beforeEnter: (to, from, next) => {
+        next('/')
     }
-  ],
-  path: '*', // or '/index.html'
-  beforeEnter: (to, from, next) => {
-    next('/')
-  }
 })

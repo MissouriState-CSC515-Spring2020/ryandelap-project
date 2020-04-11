@@ -3,18 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve -s",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "start": "npm run build && serve -s dist"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.4.4",
     "register-service-worker": "^1.6.2",
     "serve": "^11.3.0",
     "vue": "^2.6.10",
-    "vue-router": "^3.1.5"
+    "vue-router": "^3.1.5",
+    "vue-youtube-embed": "^2.2.2"
+  },
+  "rules": {
+    "no-console": "off",
+    "no-unused-vars": "off"
   },
   "devDependencies": {
     "@babel/polyfill": "^7.7.0",
@@ -43,17 +49,17 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
+    },
+    "rules": {
+      "no-console": "off",
+      "no-unused-vars": "off"
     }
   },
   "browserslist": [
     "> 1%",
     "last 2 versions"
   ],
-
-  "vue": {
-
-  }
+  "vue": {}
 }
