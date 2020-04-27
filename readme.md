@@ -5,14 +5,9 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and minifies for production, and runs server.
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+npm start 
 ```
 
 ### Lints and fixes files

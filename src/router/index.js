@@ -8,7 +8,7 @@ import User from '@/components/User'
 
 Vue.use(Router)
 export default new Router({
-	mode: 'history',
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -42,5 +42,9 @@ export default new Router({
 				title: 'User X_MDS_SLAYER_X'
 			}
     }
-  ]
+  ],
+  path: '*', // or '/index.html'
+  beforeEnter: (to, from, next) => {
+    next('/')
+  }
 })
