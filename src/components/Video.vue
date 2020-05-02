@@ -21,7 +21,6 @@ export default {
     };
   },
   mounted() {
-      console.log("Mounted called.")
     this.loadInfo(this.$route.params["id"])
   },
   methods: {

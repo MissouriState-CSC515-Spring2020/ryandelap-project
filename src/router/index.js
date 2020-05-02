@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Home from '@/components/Home'
-import Video from '@/components/Video'
-import Category from '@/components/Category'
 import VueYouTubeEmbed from 'vue-youtube-embed'
 
 Vue.use(Router)
@@ -14,7 +11,7 @@ export default new Router({
     routes: [{
             path: '/',
             alias: '/home',
-            component: Home,
+            component: () => import('@/components/Home'),
             meta: {
                 title: 'Home'
             }
@@ -22,7 +19,7 @@ export default new Router({
         {
             path: '/video/:id',
             name: 'video',
-            component: Video,
+            component: () => import('@/components/Video'),
             meta: {
                 title: 'View Video'
             } 
@@ -30,7 +27,7 @@ export default new Router({
         {
             path: '/category/:category',
             name: 'Category',
-            component: Category,
+            component: () => import('@/components/Category'),
             props: true,
         },
     ],
