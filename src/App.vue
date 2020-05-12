@@ -1,31 +1,33 @@
 <template>
+
   <div id="app">
-    <NavBar></NavBar>
-    <b-container>
-      <router-view></router-view>
-    </b-container>
+        <NavBar></NavBar>
+      <router-view>
+            <b-container>
+            </b-container>
+      </router-view>
   </div>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
+import NavBar from "./components/NavBar.vue";
+
 export default {
-  name: 'app',
+  name: "app",
   components: {
     NavBar
   },
-	watch: {
-		'$route' (to) {
-			document.title = to.meta.title || 'Your Website'
-		}
-	},
-}
-
+  watch: {
+    $route(to) {
+      document.title = to.meta.title || "Video Viewer";
+    },
+  }
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
